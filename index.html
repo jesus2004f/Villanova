@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://chefeel.com/chefgeneralfiles/2022/01/helado-scaled-880x778.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <title>Villanova - Heladería y Cafetería</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Villanova - Heladería y Cafetería</h1>
+        <div id="categories">
+            <div class="category" id="helados-clasicos">
+                <h2>Helados Clásicos</h2>
+                <div class="products">
+                    <!-- Ejemplo de producto con imagen desde Internet -->
+                    <div class="product" onclick="addToCart('Arroz con leche', 48)">
+                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=rj5iJUvd&id=13D728CD698211361C10E7049BA1AC400F6D9B4E&thid=OIP.rj5iJUvdcQlnDp2kdKYAzQHaE8&mediaurl=https%3a%2f%2fwww.thermorecetas.com%2fwp-content%2fuploads%2f2021%2f06%2fhelado-de-arroz-con-leche-thermorecetas-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ae3e62254bdd7109670e9da474a600cd%3frik%3dTpttD0CsoZsE5w%26pid%3dImgRaw%26r%3d0&exph=800&expw=1200&q=imagen+de+helado+de+arroz+con+leche&simid=608041119198695485&FORM=IRPRST&ck=D2229B4AF431FFCC8DB9E9E75BB81ACF&selectedIndex=29&itb=0&ajaxhist=0&ajaxserp=0" alt="Arroz con leche">
+                        <p>Arroz con leche</p>
+                        <p>$48</p>
+                    </div>
+                    <!-- Agrega más productos con imágenes desde Internet aquí -->
+                </div>
+            </div>
+        </div>
+        <div id="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: $0.00</p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+        <div id="ticket"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
